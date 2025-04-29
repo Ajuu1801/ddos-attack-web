@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+  }
+  
+  .container {
+    background: #111;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    animation: slideIn 1s ease forwards;
+  }
+  
+  @keyframes slideIn {
+    from {transform: translateY(50px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+  }
+  
+  input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+  }
+  
+  button {
+    width: 95%;
+    padding: 12px;
+    border: none;
+    background: #ff4081;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #e91e63;
+  }
+  
+  .title {
+    margin-bottom: 20px;
+    font-size: 30px;
+    animation: glow 2s infinite alternate;
+  }
+  
+  @keyframes glow {
+    from { text-shadow: 0 0 5px #ff4081, 0 0 10px #ff4081; }
+    to { text-shadow: 0 0 20px #e91e63, 0 0 30px #e91e63; }
+  }
+  
